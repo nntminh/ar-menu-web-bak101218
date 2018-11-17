@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bootstrap eCommerce Page Template</title>
+<!-- Bootstrap -->
+<link href="css/bootstrap-4.0.0.css" rel="stylesheet">
+	<script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
+	<script src="https://unpkg.com/aframe-animation-component@3.2.1/dist/aframe-animation-component.min.js"></script>
+	<script src="https://unpkg.com/aframe-particle-system-component@1.0.x/dist/aframe-particle-system-component.min.js"></script>
+	<script src="https://unpkg.com/aframe-extras.ocean@%5E3.5.x/dist/aframe-extras.ocean.min.js"></script>
+	<script src="https://unpkg.com/aframe-gradient-sky@1.0.4/dist/gradientsky.min.js"></script>
+	<script src="https://unpkg.com/aframe-extras.tube@%5E3.5.x/dist/aframe-extras.tube.min.js"></script>
+	<style>
+body {
+	font-family: 'Futura-CondensedMedium';
+}
+.image-view {
+	
+}
+.price {
+	color: grey;
+	font-size: 22px;
+}
+.price-button {
+	outline: 0;
+	padding: 8px;
+	color: white;
+	background-color: #a0a0a0;
+	text-align: center;
+	cursor: pointer;
+	font-size: 18px;
+	margin-left: 30%;
+	margin-right: 5%;
+	width: 40%;
+	border: 1px solid #a0a0a0;
+	border-radius: 9px;
+}
+.ar-button {
+}
+.desc {
+	text-align: center;
+}
+.nav {
+	margin: 2%;
+}
+.toolbar {
+	
+}
+.icon-bar {
+	width: 90%;
+	overflow: auto;
+	border: 1px solid #a0a0a0;
+	border-radius: 9px;
+	position: fixed;
+	bottom: 1%;
+	left: 5%;
+	background-color: white
+}
+.icon-bar a {
+	float: left;
+	width: 20%;
+	text-align: center;
+	padding: 1% 11%;
+	transition: all 0.3s ease;
+	color: black;
+	font-size: 11px;
+	text-decoration: none;
+}
+.icon-bar a:hover {
+	color: rebeccapurple;
+}
+.sroll {
+	overflow: auto;
+	position: fixed;
+	width: 90%;
+	margin: 5%;
+}
+</style>
+</head>
+<body>
+<div class="nav"> <a href="menu.html" ><img src="img/go-back-arrow.png" style="width:30px; margin: 2%;"></a>
+  <h5 style="margin-left: 10px;">
+  Product Name
+  </h1>
+</div>
+	
+<div class="sroll">
+  <div class="image-view">
+    <center>
+      <a-scene>
+        <a-box width="0.25" height="0.25" depth="0.25" position="-0.25 0.125 -0.75" rotation="0 45 0" color="#4CC3D9"></a-box>
+    <a-sphere position="0 0.3125 -1.25" radius="0.3125" color="#EF2D5E"></a-sphere>
+    <a-cylinder position="0.25 0.1875 -0.75" radius="0.125" height="0.375" color="#FFC65D"></a-cylinder>
+    <a-plane position="0 0 -1" rotation="-90 0 0" width="1" height="1" color="#7BC8A4" shadow></a-plane>
+      </a-scene>
+    </center>
+  </div>
+  <p class="desc">Some information</p>
+  <div class="toolbar">
+    <button class="price-button">$19.99</button>
+    <a href="ar.html" class="ar-button"> <img src="img/ar.png" width="30px"> </a> </div>
+</div>
+<div class="icon-bar"> <a href="home.html"><img src="img/home.svg" height="30" width="30">HOME</a> <a href="menu.html"><img src="img/menu.svg" height="30" width="30">MENU</a> <a href="favorite.html"><img src="img/favorite.svg" height="30" width="30">FAVORITE</a> <a href="profile.html"><img src="img/profile.svg" height="30" width="30">PROFILE</a> </div>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+<script src="js/jquery-3.2.1.min.js"></script> 
+<!-- Include all compiled plugins (below), or include individual files as needed --> 
+<script src="js/popper.min.js"></script> 
+<script src="js/bootstrap-4.0.0.js"></script>
+</body>
+</html>

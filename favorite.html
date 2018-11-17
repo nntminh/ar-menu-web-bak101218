@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap eCommerce Page Template</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap-4.0.0.css" rel="stylesheet">
+	<style>
+	.icon-bar {
+		width: 90%;
+		overflow: auto;
+		border: 1px solid #a0a0a0;
+		border-radius: 9px;
+		position: fixed;
+		bottom: 1%;
+		left: 5%;
+		background-color: white
+	}
+	.icon-bar a {
+		float: left;
+		width: 20%;
+		text-align: center;
+		padding: 1% 11%;
+		transition: all 0.3s ease;
+		color: black;
+		font-size: 11px;
+		text-decoration: none;
+	}
+		.detail-product{
+			background-color: #a0a0a0;
+			color: white;
+			margin: 2%;
+			padding: 2% 25%;
+			border: 1px solid #a0a0a0;
+			border-radius: 9px;
+			text-decoration: none;
+		}
+		.icon-bar a:hover {
+			color: rebeccapurple;
+		}
+		.media {
+			padding: 2%;
+			margin: 2% 1%;
+			border: 1px solid #a0a0a0;
+			border-radius: 9px;
+		}
+		.col-lg-4 {
+			overflow: auto;
+			position: fixed;
+			bottom: 10%;
+			top: 12%;
+		}
+		.categories {
+			color: black;
+			margin: 0% 5%;
+		}
+	
+		.body-product{
+			margin-right: 100px;
+		}
+</style>
+  </head>
+  <body>
+	  <hr>
+    <div class="container">
+      <div class="row">
+		  <a class="categories" href="#">All</a>
+		  <a class="categories" href="#">Food</a>
+		  <a class="categories" href="#">Drink</a>
+		  <div class="col-lg-4">
+          <ul class="list-unstyled">
+            <li class="media">
+				<div class="body-product">
+				  <h5 class="name-product">Coffee Mug</h5>
+				  <p class="desc-product">coffee mugs.</p>
+				  <a href="detail.html" class="detail-product">$10</a>
+				</div>
+				<img class="img-product" src="img/coffee-mug.png" alt="Card image cap" width="100px" height="100px">
+            </li>
+			  
+            <li class="media">
+				<div class="body-product">
+				  <h5 class="name-product">Salmon Tartine</h5>
+				  <p class="desc-product">salmon tartine</p>
+				  <a href="detail.html" class="detail-product">$10</a>
+				</div>
+				<img class="img-product" src="img/salmon-tartine.png" alt="Card image cap" width="100px" height="100px">
+            </li>
+			  
+			<li class="media">
+				<div class="body-product">
+				  <h5 class="name-product">Sanduich</h5>
+				  <p class="desc-product">sanduich.</p>
+				  <a href="detail.html" class="detail-product">$10</a>
+				</div>
+				<div class="photo">
+					<img class="img-product" src="img/sanduich.png" alt="Card image cap" width="100px" height="100px">
+				</div>	
+            </li>
+			  
+          </ul>
+        </div>
+      </div>
+    </div>
+	
+	<div class="icon-bar">
+		<a href="home.html"><img src="img/home.svg" height="30" width="30">HOME</a> 
+		<a href="menu.html"><img src="img/menu.svg" height="30" width="30">MENU</a> 
+		<a href="favorite.html"><img src="img/favorite.svg" height="30" width="30">FAVORITE</a> 
+		<a href="profile.html"><img src="img/profile.svg" height="30" width="30">PROFILE</a> 
+	</div>
+	  
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap-4.0.0.js"></script>
+  </body>
+</html>

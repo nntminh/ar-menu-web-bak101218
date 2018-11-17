@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="css/bootstrap-4.0.0.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<style>
+	body {
+		font-family: 'Futura-CondensedMedium';
+	}
+	.icon-bar {
+		width: 90%;
+		overflow: auto;
+		border: 1px solid #a0a0a0;
+		border-radius: 9px;
+		position: fixed;
+		bottom: 1%;
+		left: 5%;
+		background-color: white
+	}
+	.icon-bar a{
+			float: left;
+			width: 20%;
+			text-align: center;
+			padding: 1% 11%;
+			transition: all 0.3s ease;
+			color: black;
+			font-size: 11px;
+			text-decoration: none;
+	}
+		
+		.icon-bar a:hover {
+			color: rebeccapurple;
+		}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+
+.title {
+  color: grey;
+  font-size: 18px;
+}
+
+button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+a {
+  text-decoration: none;
+  font-size: 22px;
+  color: black;
+}
+
+button:hover, a:hover {
+  opacity: 0.7;
+}
+	
+	/***
+User Profile Sidebar by @keenthemes
+A component of Metronic Theme - #1 Selling Bootstrap 3 Admin Theme in Themeforest: http://j.mp/metronictheme
+Licensed under MIT
+***/
+
+body {
+  background: #F1F3FA;
+}
+
+/* Profile container */
+.profile {
+  margin: 20px 0;
+}
+
+/* Profile sidebar */
+.profile-sidebar {
+  padding: 20px 0 10px 0;
+  background: #fff;
+}
+
+.profile-userpic img {
+  float: none;
+  margin: 0 auto;
+  width: 50%;
+  height: 50%;
+  -webkit-border-radius: 50% !important;
+  -moz-border-radius: 50% !important;
+  border-radius: 50% !important;
+}
+
+.profile-usertitle {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.profile-usertitle-name {
+  color: #5a7391;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 7px;
+}
+
+.profile-usertitle-job {
+  text-transform: uppercase;
+  color: #5b9bd1;
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.profile-userbuttons {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.profile-userbuttons .btn {
+  text-transform: uppercase;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 6px 15px;
+  margin-right: 5px;
+}
+
+.profile-userbuttons .btn:last-child {
+  margin-right: 0px;
+}
+    
+.profile-usermenu {
+  margin-top: 30px;
+}
+
+.profile-usermenu ul li {
+  border-bottom: 1px solid #f0f4f7;
+}
+
+.profile-usermenu ul li:last-child {
+  border-bottom: none;
+}
+
+.profile-usermenu ul li a {
+  color: #93a3b5;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.profile-usermenu ul li a i {
+  margin-right: 8px;
+  font-size: 14px;
+}
+
+.profile-usermenu ul li a:hover {
+  background-color: #fafcfd;
+  color: #5b9bd1;
+}
+
+.profile-usermenu ul li.active {
+  border-bottom: none;
+}
+
+.profile-usermenu ul li.active a {
+  color: #5b9bd1;
+  background-color: #f6f9fb;
+  border-left: 2px solid #5b9bd1;
+  margin-left: -2px;
+}
+
+/* Profile Content */
+.profile-content {
+  padding: 20px;
+  background: #fff;
+  min-height: 460px;
+}
+</style>
+</head>
+<body>
+	<div class="container">
+    <div class="row profile">
+		<div class="col-md-3">
+			<div class="profile-sidebar">
+				<!-- SIDEBAR USERPIC -->
+				<div class="profile-userpic">
+					<img src="img/profile.svg" class="img-responsive" alt="">
+				</div>
+				
+				<!-- SIDEBAR MENU -->
+				<div class="profile-usermenu">
+					<ul class="nava">
+						<li class="">
+							<a href="#">
+					
+							View and edit profile </a>
+						</li>
+						<br>
+						<li>
+							<a href="#">
+							
+							Invite friends </a>
+						</li>
+						<li>
+							<a href="#">
+							
+							History </a>
+						</li>
+						<li>
+							<a href="#">
+						
+							Reward </a>
+						</li>
+						
+						<li class="active">
+							<a href="guideline.html">
+							
+							How to use </a>
+						</li>
+						<li>
+							<a href="#">
+							
+							Give us feedback </a>
+						</li>
+						<li>
+							<a href="#">
+						
+							Setting </a>
+						</li>
+						<li>
+							<a href="signin.html">
+							
+							Logout </a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+	<center>
+		<div class="icon-bar">
+			<a href="home.html"><img src="img/home.svg" height="30" width="30">HOME</a> 
+			<a href="menu.html"><img src="img/menu.svg" height="30" width="30">MENU</a> 
+			<a href="favorite.html"><img src="img/favorite.svg" height="30" width="30">FAVORITE</a> 
+			<a href="profile.html"><img src="img/profile.svg" height="30" width="30">PROFILE</a> 
+		</div>
+	</center>
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap-4.0.0.js"></script>
+</body>
+</html>

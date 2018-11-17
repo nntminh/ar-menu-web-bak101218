@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title></title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->	
+	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+<!--===============================================================================================-->
+</head>
+<body>
+	<a href="home.html" class="logo">
+	</a>
+	<div class="limiter">
+		<div class="container-login100">
+			<div class="wrap-login100 p-l-110 p-r-110 p-t-62 p-b-33">
+				<form class="login100-form validate-form flex-sb flex-w" >
+					<span class="login100-form-title p-b-53">
+						Đăng ký
+					</span>
+					
+					<!-- So dien thoai -->
+					<div class="p-t-31 p-b-9">
+						<span class="txt1">
+							So dien thoai
+						</span>
+					</div>
+					<div class="wrap-input100 validate-input" data-validate = "">
+						<input id="ip-phone-number" class="input100" type="text" name="phonenumber" >
+						<span class="focus-input100"></span>
+					</div>
+					
+					<!-- Password -->
+					<div class="p-t-13 p-b-9">
+						<span class="txt1">
+							Mat khau
+						</span>
+					</div>
+					<div class="wrap-input100 validate-input" data-validate = "">
+						<input id="ip-password-1" class="input100" type="password">
+						<span class="focus-input100"></span>
+					</div>
+
+					<!-- Password Again -->
+					<div class="p-t-13 p-b-9">
+						<span class="txt1">
+							Nhap lai mat khau
+						</span>
+					</div>
+					<div class="wrap-input100 validate-input" data-validate = "">
+						<input id="ip-password-2" class="input100" type="password">
+						<span class="focus-input100"></span>
+					</div>
+					
+					<div class="container-login100-form-btn m-t-17">
+						<a id="a-signup" class="login100-form-btn" href="#">Đăng Ký</a>
+					</div>
+					
+					<div class="w-full text-center p-t-55">
+						
+						<span class="txt2">
+							
+						</span>
+
+						<a href="signin.html" class="txt2 bo1">
+							Đăng nhập
+						</a>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	
+
+	<div id="dropDownSelect1"></div>
+	
+<!--===============================================================================================-->
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/animsition/js/animsition.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/daterangepicker/moment.min.js"></script>
+	<script src="vendor/daterangepicker/daterangepicker.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/countdowntime/countdowntime.js"></script>
+<!--===============================================================================================-->
+	<script src="js/main.js"></script>
+	
+	<script src="https://www.gstatic.com/firebasejs/5.5.8/firebase.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-firestore.js"></script>
+		<script src="https://www.gstatic.com/firebasejs/5.5.8/firebase-auth.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/5.5.8/firebase-database.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/5.5.8/firebase-firestore.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/5.5.8/firebase-messaging.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/5.5.8/firebase-functions.js"></script>
+	<script>
+	  // Initialize Firebase
+	  var config = {
+		apiKey: "AIzaSyCL6AJVue-xzCgoEglsq6AqIaQ6wa7ckGU",
+		authDomain: "ar-menu-lvtn.firebaseapp.com",
+		databaseURL: "https://ar-menu-lvtn.firebaseio.com",
+		projectId: "ar-menu-lvtn",
+		storageBucket: "ar-menu-lvtn.appspot.com",
+		messagingSenderId: "268182650410"
+	  };
+	  firebase.initializeApp(config);
+		
+		// Initialize Cloud Firestore through Firebase
+		var db = firebase.firestore();
+
+		// Disable deprecated features
+		db.settings({
+		  timestampsInSnapshots: true
+		});
+		
+	</script>
+	
+	<!-- CSS for popup message ==============================================================-->
+	<style>
+		/* The Modal (background) */
+		.modal {
+			display: none; /* Hidden by default */
+			position: fixed; /* Stay in place */
+			z-index: 1; /* Sit on top */
+			padding-top: 100px; /* Location of the box */
+			left: 0;
+			top: 0;
+			width: 100%; /* Full width */
+			height: 100%; /* Full height */
+			overflow: auto; /* Enable scroll if needed */
+			background-color: rgb(0,0,0); /* Fallback color */
+			background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+		}
+
+		/* Modal Content */
+		.modal-content {
+			background-color: #fefefe;
+			margin: auto;
+			padding: 20px;
+			border: 1px solid #888;
+			width: 80%;
+		}
+
+		/* The Close Button */
+		.close {
+			color: #aaaaaa;
+			float: right;
+			font-size: 28px;
+			font-weight: bold;
+		}
+
+		.close:hover,
+		.close:focus {
+			color: #000;
+			text-decoration: none;
+			cursor: pointer;
+		}
+	</style>
+	
+	<!-- Popup message ==============================================================-->
+	<div id="myPopup" class="modal">
+	  <!-- Modal content -->
+	  <div class="modal-content">
+		<center><p id="message"></p></center>
+	  </div>
+	</div>
+	
+	<!-- Action for button popup message =================================================-->
+	<script>
+		// Get the modal
+		var modal = document.getElementById('myPopup');
+
+		// Get message
+		var message = document.getElementById('message');
+		
+		// Create a reference to the cities collection
+		var usersRef = db.collection("users");
+		
+		// Dang ky tai khoan
+		function addUser(id, pw) {
+			// Add a new document in collection "cities"
+			usersRef.doc(id).set({
+				user_id: id,
+				user_password: pw
+			})
+			.then(function() {
+				showPopup("Chúc mừng! Đã đăng ký thành công.");
+			})
+			.catch(function(error) {
+				showPopup("Error writing document");
+			});
+		}
+		
+		// When click the sign up button
+		document.getElementById("a-signup").addEventListener("click", checkAccount);
+		function checkAccount() {
+			//Them ma vung +84 viet nam.
+    		let pnm = "+84" + document.getElementById("ip-phone-number").value.slice(1);
+			
+			let pw1 = document.getElementById("ip-password-1").value;
+			let pw2 = document.getElementById("ip-password-2").value;
+			if ( pnm && pw1 && pw2 ) {
+				if ( pw1 != pw2 ) {
+					showPopup("Mat khau khong trung khop");
+				} else {
+					showPopup("Dang kiem tra");
+					usersRef.where("user_id", "==", pnm)
+					.get()
+					.then(
+						function(querySnapshot) {
+							//Check if the document you specified actually exists.
+							if (querySnapshot.size > 0) {
+								// do something with the data
+								showPopup("Loi! Tai khoan da ton tai.");
+							} else {
+								//sendVerificationCode(pnm);
+								addUser(pnm, pw1);
+							}
+						}
+					)
+					.catch(
+						function(error) {
+							showPopup("Error getting document:", error);
+						}
+					);
+				}
+			} else {
+				showPopup("Vui long nhap day du thong tin");
+			}
+		}
+		
+		function sendVerificationCode(phone){
+			// Sent code to phone number
+			firebase.auth().useDeviceLanguage();				
+			var phoneNumber = phone;
+			var appVerifier = window.recaptchaVerifier;
+			window.recaptchaVerifier = new firebase.auth.RecaptchaVerifier('recaptcha-container');
+			var appVerifier = window.recaptchaVerifier;
+			firebase.auth().signInWithPhoneNumber(phoneNumber, appVerifier)
+    .then(function (confirmationResult) {
+      // SMS sent. Prompt user to type the code from the message, then sign the
+      // user in with confirmationResult.confirm(code).
+      window.confirmationResult = confirmationResult;
+    }).catch(function (error) {
+      // Error; SMS not sent
+      // ...
+    });
+	
+		}
+		// When the user clicks the button, open the modal 
+		function showPopup(text) {
+			modal.style.display = "block";
+			message.innerHTML = text
+		}
+
+		// When the user clicks anywhere outside of the modal, close it
+		window.onclick = function(event) {
+			if (event.target == modal) {
+				modal.style.display = "none";
+			}
+		}
+	</script>
+</body>
+</html>
