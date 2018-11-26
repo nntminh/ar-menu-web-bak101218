@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="../shared/app.css" />
+    <link rel="stylesheet" type="text/css" href="../third_party/mdl/material.min.css" />
+  </head>
+  <body>
+    <div id="enter-ar-info" class="demo-card mdl-card mdl-shadow--4dp">
+      <div class="mdl-card__title">
+        <h2 class="mdl-card__title-text">Chúc mừng thiết bị của bạn hỗ trợ tính năng AR với WebXR</h2>
+      </div>
+      <div class="mdl-card__supporting-text">
+        
+      </div>
+      <div class="mdl-card__actions mdl-card--border">
+        <a id="enter-ar" class="mdl-button mdl-button--raised mdl-button--accent">
+          Bắt đầu trải nghiệm AR.
+        </a>
+      </div>
+    </div>
+    <div id="unsupported-info" class="demo-card mdl-card mdl-shadow--4dp">
+      <div class="mdl-card__title">
+        <h2 class="mdl-card__title-text">Trình Duyệt Không Được Hỗ Trợ</h2>
+      </div>
+      <div class="mdl-card__supporting-text">
+          Trình duyệt của bạn không hỗ trợ tính năng AR với WebXR.
+		  Hãy chắc rằng thiết bị của bạn thuộc danh sách hỗ trợ ARCore của Google.
+      </div>
+    </div>
+    <div id="stabilization"></div>
+    <div id="info">
+        <span>
+            <a href="https://nntminh.github.io/ar-menu-web/menu.html">Quay lại Menu</a>
+        </span><br />
+    </div>
+    <script src="../third_party/three.js/three.js"></script>
+    <script src="../third_party/three.js/OBJLoader.js"></script>
+    <script src="../third_party/three.js/MTLLoader.js"></script>
+    <script src="../shared/utils.js"></script>
+    <script src="NRS_Cake.js"></script>
+  </body>
+</html>
