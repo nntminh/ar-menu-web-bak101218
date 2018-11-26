@@ -160,13 +160,36 @@ function detectIsMobile() {
  }
  d.getElementsByTagName('head')[0].appendChild(js);
 }(document));
+	
+		function getCookie(cname) {
+			var name = cname + "=";
+			var decodedCookie = decodeURIComponent(document.cookie);
+			var ca = decodedCookie.split(';');
+			for(var i = 0; i < ca.length; i++) {
+				var c = ca[i];
+				while (c.charAt(0) == ' ') {
+					c = c.substring(1);
+				}
+				if (c.indexOf(name) == 0) {
+					return c.substring(name.length, c.length);
+				}
+			}
+			return "";
+		}
+		
+		function checkCookie() {
+			var user=getCookie("uid");
+			if (user != "") {
+				
+			} else {
+				window.location.href = "signin.html";
+			}
+		}
 </script>	
 </head>
-	<body class="home ">
+	<body class="home" onload="checkCookie()">
 		<header id="header" class="">
 			<div class="headerWrap clear">
-				
-				
 				<a href="home.html" class="logo">
 					<!-- You can also use image as a logo the example below -->
 					<img class="logo-white" src="images/logo.png" alt="">
@@ -198,12 +221,7 @@ function detectIsMobile() {
 			<div class="slide active" data-slide="0" style="background-image: url(img/photo3.jpg); height: 100%; float: none; list-style: none; position: absolute; width: 100%; z-index: 50; display: block;">
 				<div class="slideDesc">
 					<div class="ct-caption"  style="margin: 02% 50px 20px;">
-						<h2 >de</h2>
-						<h2 >trai</h2>
-						<h2 >nghiem</h2>
-						<h2 >ar</h2>
-						<a class="learnMore" href="signin.html">dang nhap</a>
-						<a class="learnMore" href="signup.html">dang ky</a>
+						
 					</div>
 				</div>
 			</div>

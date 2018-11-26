@@ -225,7 +225,7 @@
 				user_token_fb: token
 			})
 			.then(function() {
-				window.location.href = "home.html";
+				window.location.href = "index.html";
 			})
 			.catch(function(error) {
 				showPopup("Error writing document");
@@ -252,7 +252,8 @@
 								if (querySnapshot.size > 0) {
 									// do something with the data
 									showPopup("Đăng nhập với Facebook thành công. Đang chuyển trang.");
-									window.location.href = "home.html";
+									setCookie("uid", uid, 30);
+									window.location.href = "index.html";
 								} else {
 									showPopup("Đang khởi tạo tài khoản.");
 									addUser(email, name, token);
