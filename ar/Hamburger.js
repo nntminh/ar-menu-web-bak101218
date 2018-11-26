@@ -1,5 +1,5 @@
-const MODEL_OBJ_URL = '../assets/cup_of_tea/cup_of_tea.obj';
-const MODEL_MTL_URL = '../assets/cup_of_tea/cup_of_tea.mtl';
+const MODEL_OBJ_URL = '../assets/Hamburger/Hamburger.obj';
+const MODEL_MTL_URL = '../assets/Hamburger/Hamburger.mtl';
 const MODEL_SCALE = 0.1;
 
 /**
