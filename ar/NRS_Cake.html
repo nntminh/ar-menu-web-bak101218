@@ -6,36 +6,50 @@
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
- 
-  <link rel="stylesheet" type="text/css" href="third_party/dialog-polyfill/dialog-polyfill.css">
-  <link rel="stylesheet" type="text/css" href="third_party/material-design-lite/material.min.css">
-  <link rel="stylesheet" type="text/css" href="css/app.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" type="text/css" href="third_party/dialog-polyfill/dialog-polyfill.css">
+	<link rel="stylesheet" type="text/css" href="third_party/material-design-lite/material.min.css">
+	<link rel="stylesheet" type="text/css" href="css/app.css">
 </head>
 
 <body>
   <div id="wrapper">
+	  <div id="header">
+		<a href="https://nntminh.github.io/ar-menu-web/menu.html" id="back-icon" class="material-icons">arrow_back</a>
+		<!-- <img id="google-arts-culture" src=""> -->
+  </div>
+	  
+	  <div id="container-details-title">Bánh kem phô mai</div>
 	  <div id="container" class="container">
 		<button id="exit-ar-button" class="mdl-button mdl-js-button mdl-button--fab">
-		  <img id="exit-ar-button-icon" src="images/icons/ic_close_white_2x_web_36dp.png"></img>
+		  <img id="exit-ar-button-icon" src="images/icons/ic_close_white_2x_web_36dp.png" alt="icon">
 		</button>
 		<button id="show-ar-annotations-button" class="mdl-button mdl-js-button mdl-button--fab">
-		  <img id="show-ar-annotations-button-icon" src="images/icons/ic_location_on_white_36dp_2x.png"></img>
+		  <img id="show-ar-annotations-button-icon" src="images/icons/ic_location_on_white_36dp_2x.png"  alt="icon">
 		</button>
 		<button id="hide-ar-annotations-button" class="mdl-button mdl-js-button mdl-button--fab">
-		  <img id="hide-ar-annotations-button-icon" src="images/icons/ic_location_off_white_36dp_2x.png"></img>
+		  <img id="hide-ar-annotations-button-icon" src="images/icons/ic_location_off_white_36dp_2x.png" alt="icon">
 		</button>
 		<button id="enter-ar-button" class="mdl-button mdl-js-button mdl-button--fab">
-		  <img id="enter-ar-button-icon" src="images/icons/ic_view_in_ar_white_2x_web_36dp.png"></img>
+		  <img id="enter-ar-button-icon" src="images/icons/ic_view_in_ar_white_2x_web_36dp.png" alt="icon">
 		</button>
 		<button id="enter-fs-button" class="mdl-button mdl-js-button mdl-button--fab">
-		  <img id="enter-fs-button-icon" src="images/icons/ic_fullscreen_white_2x_web_36dp.png"></img>
+		  <img id="enter-fs-button-icon" src="images/icons/ic_fullscreen_white_2x_web_36dp.png" alt="icon">
 		</button>
 		<button id="exit-fs-button" class="mdl-button mdl-js-button mdl-button--fab">
-		  <img id="exit-fs-button-icon" src="images/icons/ic_close_white_2x_web_36dp.png"></img>
+		  <img id="exit-fs-button-icon" src="images/icons/ic_close_white_2x_web_36dp.png" alt="icon">
 		</button>
 		<div id="canvas-loader" class="mdl-spinner mdl-spinner--single-color mdl-js-spinner is-active"></div>
 		<canvas id="gl-canvas"></canvas>
 	  </div>
+
+		<div id="more-information-details">
+			Bánh kem phô mai có nguồn gốc từ Hy Lạp là món bánh đặc biệt với công thức đơn giản: bột, mật ong và phô mai, thường xuất hiện trong các bữa tiệc. Ngày nay, cheesecake trở thành món bánh tráng miệng được yêu thích, xuất hiện hầu hết trong các tiệm cà phê – kem, hay những nhà hàng lớn, hoặc các tiệm bánh nổi tiếng.
+			<br>
+			Tại Sài Gòn, Cheesse Cake Ngon là địa điểm rất quen thuộc với thực khách yêu thích món bánh phô mai. Cheesse Cake Ngon với danh sách rất nhiều các loại bánh phô mai khác nhau , bánh sẽ được làm ngay trong ngày và giao tận nơi theo yêu cầu. Bánh Phô mai hương vị cổ điển là món được yêu thích nhất bạn có thể lựa chọn vị sô cô la  hoặc trà xanh. Hoặc nếu muốn bạn có thể chọn  bánh phô mai với 06 vị khác nhau đảm bảo hài lòng tất cả mọi người.
+		</div>
+		<div class="spacer"></div>
   </div>
   <script src="third_party/babel-polyfill/polyfill.js"></script>
   <script src="third_party/dialog-polyfill/dialog-polyfill.js"></script>
