@@ -218,17 +218,27 @@ function detectIsMobile() {
 <section class="container-tch section-class-name">
 	<div class="homeBxSliderWrap" style="height: 100%;">
 		<div class="bx-wrapper" style="max-width: 100%;"><div class="bx-viewport" style="width: 100%; overflow: hidden; position: relative; height: 633px;"><div class="homeBxSlider ready" style="height: 100%; width: auto; position: absolute;">
-			<div class="slide active" data-slide="0" style="background-image: url(img/photo3.jpg); height: 100%; float: none; list-style: none; position: absolute; width: 100%; z-index: 50; display: block;">
-				<div class="slideDesc">
-					<div class="ct-caption"  style="margin: 02% 50px 20px;">
-						
-					</div>
-				</div>
+			<div class="slide active" data-slide="0" style=" background-image: url(images/nen.jpg); height: 100%; float: none; list-style: none; position: absolute; width: 100%; z-index: 50; display: block;">
+				<img id="image" src="qc/1.jpg" style='height: 100%; width: 100%; object-fit: contain'>
+    			<p></p>
 			</div>
 		</div></div><div class="bx-controls bx-has-controls-direction bx-has-pager"><div class="bx-controls-direction"><a class="bx-prev disabled" href="">Prev</a><a class="bx-next disabled" href="">Next</a></div><div class="bx-pager bx-default-pager"><div class="bx-pager-item"><a href="" data-slide-index="0" class="bx-pager-link active">1</a></div></div></div></div>
 	</div>
 </section>
 
+	<script>
+      var imageSources = ["qc/2.jpg", "qc/3.jpg"]
+
+      var index = 0;
+      setInterval(function(){
+        if (index === imageSources.length) {
+          index = 0;
+        }
+        document.getElementById("image").src = imageSources[index];
+        index++;
+      }, 2000);
+    </script>
+	
 <!--end main-->
 
 
@@ -237,19 +247,11 @@ function detectIsMobile() {
 		<div class="mobileMenu">
 			<ul>
 				<li ><a href="profile.html"><img src="images/user.svg" height="100px" width="100px"></a></li>
-					<li class="active"><a href="home.html">Trang chủ</a></li>
-						
-					<li ><a href="menu.html">Menu</a></li>
-						
-					<li ><a href="">Yêu thích</a></li>
-				<li ><a href="">Lịch sử</a></li>
-				<li ><a href="">Phần thưởng</a></li>
-				<li ><a href="">Mời bạn bè</a></li>
-					<li ><a href="guideline.html">Hướng dẫn sử dụng</a></li>
-						
-					<li ><a href="">Phản hồi</a></li>
+				<li class="active"><a href="home.html">Trang chủ</a></li>
+				<li ><a href="menu.html">Menu</a></li>
+				<li ><a href="favorite.html">Yêu thích</a></li>
+				<li ><a href="guideline.html">Hướng dẫn sử dụng</a></li>
 				<li ><a href="signin.html">Đăng xuất</a></li>
-							
 			</ul>
 		</div>
 	</body>
