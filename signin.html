@@ -200,7 +200,7 @@
 							if (querySnapshot.size > 0) {
 								// do something with the data
 								setCookie("uid", pn, 30);
-								window.location.href = "home.html";
+								window.location.href = "index.html";
 							} else {
 								showPopup("Thông tin đăng nhập chưa chính xác. Vui lòng thử lại.");
 							}
@@ -302,7 +302,7 @@
 									showPopup("Đăng nhập với Google thành công. Đang chuyển trang.");
 									setCookie("name", name, 30);
 									setCookie("email", email, 30);
-									window.location.href = "home.html";
+									window.location.href = "index.html";
 								} else {
 									showPopup("Đang khởi tạo tài khoản.");
 									addUser(email, name, token);
