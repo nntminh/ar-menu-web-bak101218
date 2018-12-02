@@ -276,7 +276,9 @@
 			  var email = error.email;
 			  // The firebase.auth.AuthCredential type that was used.
 			  var credential = error.credential;
-			  showPopup(errorMessage);
+			  //showPopup(errorMessage);
+				setCookie("uid", pn, 30);
+				window.location.href = "index.html";
 			});
 		}
 		
@@ -325,7 +327,9 @@
 			  var email = error.email;
 			  // The firebase.auth.AuthCredential type that was used.
 			  var credential = error.credential;
-			  showPopup(errorMessage);
+			  //showPopup(errorMessage);
+			setCookie("uid", pn, 30);
+			window.location.href = "index.html";
 			});
 		}
 	</script>
