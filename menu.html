@@ -41,9 +41,37 @@
 <link href='//theme.hstatic.net/1000075078/1000297410/14/styles.css?v=56' rel='stylesheet' type='text/css'  media='all'  />
 <link href='//theme.hstatic.net/1000075078/1000297410/14/adaptive.css?v=56' rel='stylesheet' type='text/css'  media='all'  />
 <link href='//theme.hstatic.net/1000075078/1000297410/14/animate.css?v=56' rel='stylesheet' type='text/css'  media='all'  />
-<script src="https://aframe.io/releases/0.8.2/aframe.min.js"></script>
+
+<script>
+		
+		function getCookie(cname) {
+			var name = cname + "=";
+			var decodedCookie = decodeURIComponent(document.cookie);
+			var ca = decodedCookie.split(';');
+			for(var i = 0; i < ca.length; i++) {
+				var c = ca[i];
+				while (c.charAt(0) == ' ') {
+					c = c.substring(1);
+				}
+				if (c.indexOf(name) == 0) {
+					return c.substring(name.length, c.length);
+				}
+			}
+			return "";
+		}
+		
+		function checkCookie() {
+			var user=getCookie("uid");
+			if (user != "") {
+				
+			} else {
+				window.location.href = "signin.html";
+			}
+		}
+</script>
+		
 </head>
-	<body class="home ">
+	<body class="home" onload="checkCookie()">
 		<header id="header" class="">
 			<div class="headerWrap clear">
 				
@@ -71,9 +99,7 @@
 			<div class="submenu-scroll-wrap">
 				
 				<a href="#scroll-section1" class="submenu-scroll">BANH</a>
-				
 				-
-				
 				
 				<a href="#scroll-section2" class="submenu-scroll">NUOC UONG</a>		
 						
@@ -134,6 +160,21 @@
 
 	<div class="container-fluid">
 		<section id="news" class="wow fadeInUp section-class-name">
+		
+		<div class="part-news">
+			<div class="img-news">
+				<img src="assets/NRS_Cake/NRS_Cake.png" width="360px" height="360px" alt="">
+			</div>
+			<a href="" ><img src="images/favorite.svg" width="20px" height="20px" alt="" style="margin: 10px;"></a>
+			<div class="info-news">
+				<a href="ar/NRS_Cake.html"><h3>Bánh Kem Phô Mai</h3></a>
+				<p>Một miếng bánh kem phô mai ngọt ngào tan chảy trong miệng được chế biến theo kiểu cổ điển sẽ đem đến cho bạn cảm giác mới lạ</p>
+				<h4>Giá: 50.000 VND</h4>
+				<a href="ar/NRS_Cake.html">Xem chi tiết</a> <br><br>
+				<a href="#"><img src="images/icons/favorite.jpeg" height="40px" alt="" style="border-radius: 50%;" ></a>
+			</div>
+			<div class="clearfix"></div>
+		</div><!--end part-news-->
 			
 		<div class="part-news">
 			<div class="img-news">
@@ -142,10 +183,12 @@
 			<a href="" ><img src="images/favorite.svg" width="20px" height="20px" alt="" style="margin: 10px;"></a>
 			<div class="info-news">
 				
-				<a href="" ><h3>CA PHE</h3></a>
+				<a href="" ><h3>Cà phê buôn ma thuộc</h3></a>
 				<h4>#40.000 VND</h4>
-				<p>Ca phe huong vi que nha</p>
-				<a href="ar/cup_of_tea.html" ><img src="img/ar_icon.svg" width="40px" alt=""></a>
+				<p>Nói đến Buôn Ma Thuột không thể không nói đến vị đậm hương nồng của những ly cà phê thơm ngon bất hủ</p>
+				<h4>Giá: 30.000 VND</h4>
+				<a href="ar/cup_of_tea.html">Xem chi tiết</a> <br><br>
+				<a href="#"><img src="images/icons/favorite.jpeg" height="40px" alt="" style="border-radius: 50%;" ></a>
 			</div>
 			<div class="clearfix"></div>
 		</div><!--end part-news-->
@@ -159,31 +202,16 @@
 			<div class="info-news">
 
 				<a href="" ><h3>Hamburger</h3></a>
-				<h4>GIA: 80.000 VND</h4>
-				<p>Hamburger</p>
-				<a href="ar/Hamburger.html" ><img src="img/ar_icon.svg" width="40px" alt=""></a>
+				<p>Bánh hamburger là một loại thức ăn bao gồm bánh mì kẹp có thịt xay ở giữa. Bánh thường được thưởng thức với khoai tây chiên</p>
+				<h4>Giá: 90.000 VND</h4>
+				<a href="ar/Hamburger.html">Xem chi tiết</a> <br><br>
+				<a href="#"><img src="images/icons/favorite.jpeg" height="40px" alt="" style="border-radius: 50%;" ></a>
 			</div>
 			
 			
 			<div class="clearfix"></div>
 			
 		</div><!--end part-news-->
-			
-		<div class="part-news">
-			<div class="img-news">
-				<img src="assets/NRS_Cake/NRS_Cake.png" width="360px" height="360px" alt="">
-			</div>
-			<a href="" ><img src="images/favorite.svg" width="20px" height="20px" alt="" style="margin: 10px;"></a>
-			<div class="info-news">
-				
-				<a href="" ><h3>Cake</h3></a>
-				<h4>#50.000 VND</h4>
-				
-				<a href="ar/NRS_Cake.html"><img src="img/ar_icon.svg" height="40px" alt=""></a>
-			</div>
-			<div class="clearfix"></div>
-		</div><!--end part-news-->
-
 	</section><!--end news-->
 		
 		<div class="part-news">
@@ -194,9 +222,10 @@
 			<div class="info-news">
 				
 				<a href="" ><h3>Pasta</h3></a>
-				<h4>#50.000 VND</h4>
-				
-				<a href="ar/Pasta.html"><img src="img/ar_icon.svg" height="40px" alt=""></a>
+				<p>Pasta là một loại mì và là một thực phẩm thiết yếu của các món ăn Ý truyền thống</p>
+				<h4>Giá: 20.000 VND</h4>
+				<a href="ar/Hamburger.html">Xem chi tiết</a> <br><br>
+				<a href="#"><img src="images/icons/favorite.jpeg" height="40px" alt="" style="border-radius: 50%;" ></a>
 			</div>
 			<div class="clearfix"></div>
 		</div><!--end part-news-->
@@ -210,20 +239,12 @@
 		
 		<div class="mobileMenu">
 			<ul>
-				<li ><a href="profile.html"><img src="images/user.svg" height="100px" width="100px" alt=""></a></li>
-					<li class="active"><a href="home.html">Trang chủ</a></li>
-						
-					<li ><a href="menu.html">Menu</a></li>
-						
-					<li ><a href="menu.html">Yêu thích</a></li>
-				<li ><a href="">Lịch sử</a></li>
-				<li ><a href="">Phần thưởng</a></li>
-				<li ><a href="">Mời bạn bè</a></li>
-					<li ><a href="guideline.html">Hướng dẫn sử dụng</a></li>
-						
-					<li ><a href="feedback/feedback.html">Phản hồi</a></li>
-				<li ><a href="signout.html">Đăng xuất</a></li>
-							
+				<li ><a href="profile.html"><img src="images/user.svg" height="100px" width="100px"></a></li>
+				<li class="active"><a href="home.html">Trang chủ</a></li>
+				<li ><a href="menu.html">Menu</a></li>
+				<li ><a href="favorite.html">Yêu thích</a></li>
+				<li ><a href="guideline.html">Hướng dẫn sử dụng</a></li>
+				<li ><a href="signin.html">Đăng xuất</a></li>
 			</ul>
 		</div>
 
