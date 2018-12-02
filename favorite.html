@@ -1,121 +1,287 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap eCommerce Page Template</title>
-    <!-- Bootstrap -->
-    <link href="css/bootstrap-4.0.0.css" rel="stylesheet">
-	<style>
-	.icon-bar {
-		width: 90%;
-		overflow: auto;
-		border: 1px solid #a0a0a0;
-		border-radius: 9px;
-		position: fixed;
-		bottom: 1%;
-		left: 5%;
-		background-color: white
-	}
-	.icon-bar a {
-		float: left;
-		width: 20%;
-		text-align: center;
-		padding: 1% 11%;
-		transition: all 0.3s ease;
-		color: black;
-		font-size: 11px;
-		text-decoration: none;
-	}
-		.detail-product{
-			background-color: #a0a0a0;
-			color: white;
-			margin: 2%;
-			padding: 2% 25%;
-			border: 1px solid #a0a0a0;
-			border-radius: 9px;
-			text-decoration: none;
+<!doctype html>
+<html lang="en"> 
+	<head>
+		<title>
+		</title>
+		<link rel="stylesheet" type="text/css" href="../shared/app.css" />
+    	<link rel="stylesheet" type="text/css" href="../third_party/mdl/material.min.css" />
+		<meta content="width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=0" name="viewport" />
+
+<script src="//hstatic.net/0/0/global/design/plugins/jquery/jquery-1.11.3.min.js"></script>
+		<script src="//hstatic.net/0/0/global/design/plugins/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+		<script src="//hstatic.net/0/0/global/design/js/option_selection.min.js"></script>
+		<script src="//hstatic.net/0/0/global/design/js/api.jquery.min.js"></script>
+
+
+<script src='//theme.hstatic.net/1000075078/1000297410/14/modernizr.min.js?v=56' type='text/javascript'></script>
+<script src="//hstatic.net/0/0/global/design/theme-default/html5shiv.js"></script>
+<script src="//hstatic.net/0/0/global/design/theme-default/jquery-migrate-1.2.0.min.js"></script>
+<script src='//hstatic.net/0/0/global/design/theme-default/jquery.touchSwipe.min.js' type='text/javascript'></script>
+<script src="//hstatic.net/0/0/global/design/js/haravan.plugin.1.0.min.js"></script>
+<script src='//hstatic.net/0/0/global/design/js/owl.carousel.js' type='text/javascript'></script>
+<script src='//theme.hstatic.net/1000075078/1000297410/14/jquery.selectric.min.js?v=56' type='text/javascript'></script>
+<script src='//theme.hstatic.net/1000075078/1000297410/14/jquery.bxslider.min.js?v=56' type='text/javascript'></script>
+
+<script src='//theme.hstatic.net/1000075078/1000297410/14/jQuery.scrollSpeed.js?v=56' type='text/javascript'></script>
+<script src='//theme.hstatic.net/1000075078/1000297410/14/parallax.js?v=56' type='text/javascript'></script>
+<script src='//theme.hstatic.net/1000075078/1000297410/14/jquery.flexslider.js?v=56' type='text/javascript'></script>
+<script src='//theme.hstatic.net/1000075078/1000297410/14/scripts.js?v=56' type='text/javascript'></script>
+<script src='//theme.hstatic.net/1000075078/1000297410/14/wow.js?v=56' type='text/javascript'></script>
+
+<!--------------CSS----------->
+<link rel="stylesheet" href="//hstatic.net/0/0/global/design/plugins/bootstrap/3.3.6/css/bootstrap.min.css">
+<link rel="stylesheet" href="//hstatic.net/0/0/global/design/plugins/font-awesome/4.5.0/css/font-awesome.min.css">
+<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,600,300' rel='stylesheet' type='text/css'>
+<link href='//hstatic.net/0/0/global/design/css/owl.carousel.css' rel='stylesheet' type='text/css'  media='all'  />
+<link href='//hstatic.net/0/0/global/design/css/owl.theme.css' rel='stylesheet' type='text/css'  media='all'  />
+<link href='//theme.hstatic.net/1000075078/1000297410/14/owl.transitions.css?v=56' rel='stylesheet' type='text/css'  media='all'  />
+<link href='//theme.hstatic.net/1000075078/1000297410/14/bxslider.css?v=56' rel='stylesheet' type='text/css'  media='all'  />
+<link href='//theme.hstatic.net/1000075078/1000297410/14/flexslider.css?v=56' rel='stylesheet' type='text/css'  media='all'  />
+<link href='//theme.hstatic.net/1000075078/1000297410/14/selectric.css?v=56' rel='stylesheet' type='text/css'  media='all'  />
+<link href='//theme.hstatic.net/1000075078/1000297410/14/styles.css?v=56' rel='stylesheet' type='text/css'  media='all'  />
+<link href='//theme.hstatic.net/1000075078/1000297410/14/adaptive.css?v=56' rel='stylesheet' type='text/css'  media='all'  />
+<link href='//theme.hstatic.net/1000075078/1000297410/14/animate.css?v=56' rel='stylesheet' type='text/css'  media='all'  />
+
+<script>
+		
+		function getCookie(cname) {
+			var name = cname + "=";
+			var decodedCookie = decodeURIComponent(document.cookie);
+			var ca = decodedCookie.split(';');
+			for(var i = 0; i < ca.length; i++) {
+				var c = ca[i];
+				while (c.charAt(0) == ' ') {
+					c = c.substring(1);
+				}
+				if (c.indexOf(name) == 0) {
+					return c.substring(name.length, c.length);
+				}
+			}
+			return "";
 		}
-		.icon-bar a:hover {
-			color: rebeccapurple;
+		
+		function checkCookie() {
+			var user=getCookie("uid");
+			if (user != "") {
+				
+			} else {
+				window.location.href = "signin.html";
+			}
 		}
-		.media {
-			padding: 2%;
-			margin: 2% 1%;
-			border: 1px solid #a0a0a0;
-			border-radius: 9px;
-		}
-		.col-lg-4 {
-			overflow: auto;
-			position: fixed;
-			bottom: 10%;
-			top: 12%;
-		}
-		.categories {
-			color: black;
-			margin: 0% 5%;
-		}
-	
-		.body-product{
-			margin-right: 100px;
-		}
-</style>
-  </head>
-  <body>
-	  <hr>
-    <div class="container">
-      <div class="row">
-		  <a class="categories" href="#">All</a>
-		  <a class="categories" href="#">Food</a>
-		  <a class="categories" href="#">Drink</a>
-		  <div class="col-lg-4">
-          <ul class="list-unstyled">
-            <li class="media">
-				<div class="body-product">
-				  <h5 class="name-product">Coffee Mug</h5>
-				  <p class="desc-product">coffee mugs.</p>
-				  <a href="detail.html" class="detail-product">$10</a>
-				</div>
-				<img class="img-product" src="img/coffee-mug.png" alt="Card image cap" width="100px" height="100px">
-            </li>
-			  
-            <li class="media">
-				<div class="body-product">
-				  <h5 class="name-product">Salmon Tartine</h5>
-				  <p class="desc-product">salmon tartine</p>
-				  <a href="detail.html" class="detail-product">$10</a>
-				</div>
-				<img class="img-product" src="img/salmon-tartine.png" alt="Card image cap" width="100px" height="100px">
-            </li>
-			  
-			<li class="media">
-				<div class="body-product">
-				  <h5 class="name-product">Sanduich</h5>
-				  <p class="desc-product">sanduich.</p>
-				  <a href="detail.html" class="detail-product">$10</a>
-				</div>
-				<div class="photo">
-					<img class="img-product" src="img/sanduich.png" alt="Card image cap" width="100px" height="100px">
-				</div>	
-            </li>
-			  
-          </ul>
-        </div>
-      </div>
-    </div>
-	
-	<div class="icon-bar">
-		<a href="home.html"><img src="img/home.svg" height="30" width="30">HOME</a> 
-		<a href="menu.html"><img src="img/menu.svg" height="30" width="30">MENU</a> 
-		<a href="favorite.html"><img src="img/favorite.svg" height="30" width="30">FAVORITE</a> 
-		<a href="profile.html"><img src="img/profile.svg" height="30" width="30">PROFILE</a> 
+</script>
+		
+</head>
+	<body class="home" onload="checkCookie()">
+		<header id="header" class="">
+			<div class="headerWrap clear">
+				
+				<a href="" class="logo">
+					<!-- You can also use image as a logo the example below -->
+					<img class="logo-white" src="images/logo.png" alt="">
+					<img class="logo-black" src="images/logo.png" alt="">
+				</a>
+				
+				<span class="showMobileMenu">
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+				</span>
+				<div class="clearfix"></div>
+			</div>
+		</header>
+
+		<section class="container-tch">
+		<div class="banner-page" style="background-image: url(img/photo3.jpg);">
+		
+			<div class="top-menu">
+			<h2 class="title-of-banner wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;">Yêu thích</h2><!--end title-of-banner -->
+			<div class="submenu-scroll-wrap">
+				
+				<a href="#scroll-section1" class="submenu-scroll"></a>
+				-
+				
+				<a href="#scroll-section2" class="submenu-scroll"></a>		
+						
+				<style>
+					#header {height:62px;}
+					.submenu-scroll-wrap {
+					position: absolute;
+					bottom: 55px;
+					left: 220px;
+					}
+					.submenu-scroll {color:#fff;font-family: 'Source Sans Pro', sans-serif; margin: 0 10px 0 10px;}
+					.submenu-scroll:hover{color:#ea8024;}
+					.submenu-scroll-wrap-ontop {
+					position:fixed;
+					left:0px;
+					width: 100%;
+					background:#fff;
+					top:58px;
+					z-index:1;
+					display:none;
+					padding: 10px 0px 20px;
+					}
+					.submenu-scroll-wrap-ontop.is-sticky {display:block;}
+					.submenu-scroll-wrap-ontop .submenu-scroll {
+					}
+					#header .headerWrap.is-sticky {
+					box-shadow: none !important;
+					-webkit-box-shadow: none !important;
+					-moz-box-shadow: none !important;
+					}
+
+					@media (max-width:767px) {
+					.title-of-banner {
+					bottom:50px;
+					}
+					.submenu-scroll-wrap {
+					left: 30px;
+					bottom: 0px;
+					line-height: 1.5;
+					}
+					}
+					@media (max-width:479px) {
+					.title-of-banner {
+					bottom:120px;
+					}
+					.submenu-scroll-wrap {
+					left: 5px;
+					bottom: 24px;
+					}
+					}
+
+				</style>
+			</div>
+		</div>
+		</div><!--end banner-page -->
+	</section>
+<div class="menu-3">
+
+	<div class="container-fluid">
+		<section id="news" class="wow fadeInUp section-class-name">
+		
+		<div class="part-news">
+			<div class="img-news">
+				<img src="assets/NRS_Cake/NRS_Cake.png" width="360px" height="360px" alt="">
+			</div>
+			<a href="" ><img src="images/favorite.svg" width="20px" height="20px" alt="" style="margin: 10px;"></a>
+			<div class="info-news">
+				<a href="ar/NRS_Cake.html"><h3>Bánh Kem Phô Mai</h3></a>
+				<p>Một miếng bánh kem phô mai ngọt ngào tan chảy trong miệng được chế biến theo kiểu cổ điển sẽ đem đến cho bạn cảm giác mới lạ</p>
+				<h4>Giá: 50.000 VND</h4>
+				<a href="ar/NRS_Cake.html">Xem chi tiết</a> <br><br>
+				<a class="add-favorite" hre><img src="images/icons/remove.png" height="40px" alt="" style="border-radius: 50%;" ></a>
+			</div>
+			<div class="clearfix"></div>
+		</div><!--end part-news-->
+	</section><!--end news-->
+
 	</div>
-	  
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="js/jquery-3.2.1.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap-4.0.0.js"></script>
-  </body>
+
+		<!-- Popup message ==============================================================-->
+	<div id="myPopup" class="modal">
+	  <!-- Modal content -->
+	  <div class="modal-content">
+		<center><p id="message"></p></center>
+	  </div>
+	</div>
+	
+	<!-- Action for popup message =================================================-->
+	<script>
+		// Get the modal
+		var modal = document.getElementById('myPopup');
+
+		// Get message
+		var message = document.getElementById('message');
+		
+		// When the user clicks the button, open the modal 
+		function showPopup(text) {
+			modal.style.display = "block";
+			message.innerHTML = text
+		}
+
+		// When the user clicks anywhere outside of the modal, close it
+		window.onclick = function(event) {
+			if (event.target == modal) {
+				modal.style.display = "none";
+			}
+		}
+	</script>
+		
+</div>
+		<div class="clearfix"></div>
+		
+		<div class="mobileMenu">
+			<ul>
+				<li ><a href="profile.html"><img src="images/user.svg" height="100px" width="100px"></a></li>
+				<li class="active"><a href="home.html">Trang chủ</a></li>
+				<li ><a href="menu.html">Menu</a></li>
+				<li ><a href="favorite.html">Yêu thích</a></li>
+				<li ><a href="guideline.html">Hướng dẫn sử dụng</a></li>
+				<li ><a href="signin.html">Đăng xuất</a></li>
+			</ul>
+		</div>
+
+		<script>
+		wow = new WOW(
+			{
+				animateClass: 'animated',
+				offset:       100
+			}
+		);
+		wow.init();  
+		/*
+		document.getElementById('moar').onclick = function() {
+			var section = document.createElement('section');
+			section.className = 'section--purple wow fadeInDown';
+			this.parentNode.insertBefore(section, this);
+		};
+*/
+		$('.parallax-window1').parallax({imageSrc: '//hstatic.net/078/1000075078/2/2016/3-8/coffee_131c6488-0505-425c-6762-5dcb1304087a_master.png', zIndex: 0});
+		$('.parallax-window2').parallax({imageSrc: '//hstatic.net/078/1000075078/2/2016/3-8/iced-blended_70455e21-9606-4d33-7dcc-fd9e7ab75b43_master.png', zIndex: 0});
+		$('.parallax-window3').parallax({imageSrc: '//hstatic.net/078/1000075078/2/2016/3-8/specialtea_master.png', zIndex: 0});
+		$('.parallax-window4').parallax({imageSrc: '//hstatic.net/0/0/global/noDefaultImage6_master.gif', zIndex: 0});
+		</script>
+		<div class="modal fade my-popup" id="quick-view-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="false">
+	<div class="modal-dialog modal-lg">
+		<div class="modal-content">
+			<!--<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal" aria-label="Close"><a aria-hidden="true"><i class="fa fa-times"></i></a></button>
+</div>-->
+			<div class="modal-body">
+				<div class="container-fluid">
+					<div class="row">
+						<form method="post" action="/cart/add">
+							<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 t-img">
+								<div class="image-zoom row text-center">
+									<img class="p-product-image-feature" src="#" alt="">
+									<div id="p-sliderproduct" class="flexslider">
+										<ul class="slides"></ul>
+									</div> 
+
+								</div>
+							</div>
+							<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 pull-right t-detail" style="padding: 10% 5%;">
+								<div class="form-input">
+									<img src="//theme.hstatic.net/1000075078/1000297410/14/icon-popup.png?v=56" alt="">
+									<div class="product-title p-title">
+									</div>
+									<div class="product-des">
+									</div>
+								</div>
+
+							</div>
+						</form>
+					</div>
+				</div>
+				<div class="t-close">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close"><a aria-hidden="true"><i class="fa fa-times"></i> Đóng</a></button>
+				</div>
+
+			</div>
+		</div><!-- /.modal-content -->
+	</div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+	</body>
 </html>
